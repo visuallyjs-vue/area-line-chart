@@ -15,10 +15,7 @@ const setViewingOptions = (options) => {
     <div v-for="(chart, index) in charts" :key="index" class="vjs-chart-example">
       <div class="vjs-chart-header">
         <div class="vjs-chart-example-title">{{ chart.desc }}</div>
-        <button
-            class="show-code-btn"
-            @click="setViewingOptions(chart.options)"
-        >
+        <button class="show-code-btn" @click="setViewingOptions(chart.options)">
           Show me the code
         </button>
       </div>
